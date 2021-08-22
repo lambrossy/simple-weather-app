@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jrsJWt ZZLqs"
+  >
+    <div
+      class="sc-kEqXSa fBXjEc"
+    >
+      <div
+        class="sc-iqAclL gIyUmm"
+      >
+        Whoops, something went wrong!
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jrsJWt ZZLqs"
+  >
+    <div
+      class="sc-kEqXSa fBXjEc"
+    >
+      <div
+        class="sc-iqAclL gIyUmm"
+      >
+        Loading
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders success state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jrsJWt ZZLqs"
+  >
+    <div
+      class="sc-kEqXSa fBXjEc"
+    >
+      <div
+        class="sc-bdnxRM fwJTUD"
+      >
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Melbourne
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  13°
+                </div>
+                <img
+                  alt="Clouds"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/04n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Overcast clouds
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 11°
+                </div>
+                <div>
+                  High: 14°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Sydney
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  14°
+                </div>
+                <img
+                  alt="Clear"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Clear sky
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 12°
+                </div>
+                <div>
+                  High: 16°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Brisbane
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  15°
+                </div>
+                <img
+                  alt="Clear"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Clear sky
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 13°
+                </div>
+                <div>
+                  High: 17°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Adelaide
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  11°
+                </div>
+                <img
+                  alt="Clear"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Clear sky
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 10°
+                </div>
+                <div>
+                  High: 13°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Canberra
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  11°
+                </div>
+                <img
+                  alt="Clouds"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/04n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Overcast clouds
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 9°
+                </div>
+                <div>
+                  High: 12°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Perth
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  13°
+                </div>
+                <img
+                  alt="Clear"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Clear sky
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 12°
+                </div>
+                <div>
+                  High: 15°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Darwin
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  26°
+                </div>
+                <img
+                  alt="Clear"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Clear sky
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 24°
+                </div>
+                <div>
+                  High: 26°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gtsrHT jnDyyg"
+        >
+          <div
+            class="sc-dlnjwi eSZeum"
+          >
+            <div
+              class="sc-hKFxyN bAHqqK"
+            >
+              <h2
+                class="sc-eCApnc gitqnN"
+              >
+                Hobart
+              </h2>
+              <div
+                class="sc-gKAaRy gPYLQA"
+              >
+                <div
+                  class="sc-jSFjdj cAlUKH"
+                >
+                  11°
+                </div>
+                <img
+                  alt="Clouds"
+                  class="sc-iCoGMd hcYqGP"
+                  src="http://openweathermap.org/img/wn/02n@2x.png"
+                />
+              </div>
+              <h2
+                class="sc-fujyAs bNiUUU"
+              >
+                Few clouds
+              </h2>
+              <div
+                class="sc-pNWdM jbXcIf"
+              >
+                <div>
+                  Low: 9°
+                </div>
+                <div>
+                  High: 12°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

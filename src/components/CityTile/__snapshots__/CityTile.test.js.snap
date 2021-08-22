@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="sc-bdnxRM jcNukz"
+  >
+    <div
+      class="sc-gtsrHT iMbPwy"
+    >
+      <h2
+        class="sc-dlnjwi efKzcR"
+      >
+        Hobart
+      </h2>
+      <div
+        class="sc-eCApnc dTKwPB"
+      >
+        <div
+          class="sc-hKFxyN fyrwTC"
+        >
+          11
+          °
+        </div>
+        <img
+          alt="Clouds"
+          class="sc-jSFjdj hNba-Dv"
+          src="http://openweathermap.org/img/wn/02n@2x.png"
+        />
+      </div>
+      <h2
+        class="sc-gKAaRy eQsPIB"
+      >
+        Few clouds
+      </h2>
+      <div
+        class="sc-iCoGMd eXYBxk"
+      >
+        <div>
+          Low: 
+          10
+          °
+        </div>
+        <div>
+          High: 
+          12
+          °
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
