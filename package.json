@@ -1,4 +1,5 @@
 {
+  "author": "Lambros Symeonakis <lambros@symeonakis.com>",
   "name": "simple-weather-app",
   "version": "0.1.0",
   "private": true,

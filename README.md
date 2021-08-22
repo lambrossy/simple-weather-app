@@ -5,6 +5,8 @@
 `npm i`\
 `npm start`
 
+Note: Although not best-practice, checked-in `OpenWeatherMap` api key in `.env` for reviewer convenience
+
 ## Noteworthy features
 
 - 100% unit test coverage
