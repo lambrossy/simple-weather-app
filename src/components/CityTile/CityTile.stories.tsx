@@ -1,4 +1,5 @@
-import React from "react";
+import { Story } from "@storybook/react";
+import CityWeather from "../../types/CityWeather";
 import CityTile from "./CityTile";
 
 export default {
@@ -6,11 +7,13 @@ export default {
   component: CityTile,
 };
 
-const Template = (args) => <CityTile {...args} />;
+const Template: Story<CityWeather> = (args: CityWeather) => (
+  <CityTile {...args} />
+);
 
 export const Basic = Template.bind({});
 Basic.args = {
-  id: 2163355,
+  id: "2163355",
   name: "Hobart",
   description: "few clouds",
   temperature: { current: 11.28, max: 12.37, min: 9.51 },

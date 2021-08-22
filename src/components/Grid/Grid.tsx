@@ -1,3 +1,4 @@
+import { FC } from "react";
 import styled from "styled-components";
 
 const Container = styled.div({
@@ -10,9 +11,13 @@ const Cell = styled.div({
   margin: 10,
 });
 
-const Grid = ({ children }) => (
+interface Props {
+  children: JSX.Element[];
+}
+
+const Grid: FC<Props> = ({ children }) => (
   <Container>
-    {children.map((cell) => (
+    {children.map((cell: JSX.Element) => (
       <Cell key={cell.key}>{cell}</Cell>
     ))}
   </Container>

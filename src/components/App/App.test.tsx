@@ -1,6 +1,14 @@
-import { render, act } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import * as SWR from "swr";
 import App from "./App";
+
+const dependencies = { fetch: () => Promise.resolve(true), env: {} };
+const swr = {
+  data: undefined,
+  revalidate: () => Promise.resolve(false),
+  mutate: () => Promise.resolve(false),
+  isValidating: false,
+};
 
 const cities = [
   {
@@ -86,28 +94,19 @@ const cities = [
 ];
 
 it("renders loading state correctly", () => {
-  jest.spyOn(SWR, "default").mockReturnValue({ data: undefined });
-  let screen;
-  act(() => {
-    screen = render(<App dependencies={undefined} />);
-  });
+  jest.spyOn(SWR, "default").mockReturnValue(swr);
+  const screen = render(<App dependencies={dependencies} />);
   expect(screen.asFragment()).toMatchSnapshot();
 });
 
 it("renders error state correctly", () => {
-  jest.spyOn(SWR, "default").mockReturnValue({ error: true });
-  let screen;
-  act(() => {
-    screen = render(<App dependencies={undefined} />);
-  });
+  jest.spyOn(SWR, "default").mockReturnValue({ ...swr, error: true });
+  const screen = render(<App dependencies={dependencies} />);
   expect(screen.asFragment()).toMatchSnapshot();
 });
 
 it("renders success state correctly", () => {
-  jest.spyOn(SWR, "default").mockReturnValue({ data: cities });
-  let screen;
-  act(() => {
-    screen = render(<App dependencies={undefined} />);
-  });
+  jest.spyOn(SWR, "default").mockReturnValue({ ...swr, data: cities });
+  const screen = render(<App dependencies={dependencies} />);
   expect(screen.asFragment()).toMatchSnapshot();
 });

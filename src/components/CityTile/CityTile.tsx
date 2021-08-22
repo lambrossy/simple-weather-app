@@ -1,8 +1,10 @@
-import { forwardRef, memo } from "react";
+import { memo, FC } from "react";
 import GlassPane from "../GlassPane/GlassPane";
 import styled from "styled-components";
 import round from "lodash/fp/round";
 import upperFirst from "lodash/fp/upperFirst";
+
+import CityWeather from "../../types/CityWeather";
 
 const Container = styled.div({
   width: 240,
@@ -50,8 +52,13 @@ const TemperatureRange = styled.div({
   fontSize: 24,
 });
 
-const CityTile = forwardRef(({ name, icon, temperature, description }, ref) => (
-  <GlassPane ref={ref}>
+const CityTile: FC<CityWeather> = ({
+  name,
+  icon,
+  temperature,
+  description,
+}) => (
+  <GlassPane>
     <Container>
       <CityName>{name}</CityName>
       <Conditions>
@@ -65,6 +72,6 @@ const CityTile = forwardRef(({ name, icon, temperature, description }, ref) => (
       </TemperatureRange>
     </Container>
   </GlassPane>
-));
+);
 
 export default memo(CityTile);

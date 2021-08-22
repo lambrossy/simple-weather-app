@@ -1,8 +1,10 @@
-import { memo } from "react";
+import { memo, FC } from "react";
 import styled from "styled-components";
 import Grid from "../Grid/Grid";
 import CityTile from "../CityTile/CityTile";
 import useCities from "../../hooks/useCities";
+import CityWeather from "../../types/CityWeather";
+import { AppDependencies } from "../../interfaces/AppDependencies";
 
 const Container = styled.div({
   height: "100%",
@@ -25,7 +27,11 @@ const Message = styled.div({
   textAlign: "center",
 });
 
-const App = ({ dependencies }) => {
+interface Props {
+  dependencies: AppDependencies;
+}
+
+const App: FC<Props> = ({ dependencies }) => {
   const { cities, error, loading } = useCities(dependencies);
 
   return (
@@ -35,7 +41,7 @@ const App = ({ dependencies }) => {
         {error && <Message>Whoops, something went wrong!</Message>}
         {cities && (
           <Grid>
-            {cities.map((city) => (
+            {cities.map((city: CityWeather) => (
               <CityTile key={city.id} {...city} />
             ))}
           </Grid>

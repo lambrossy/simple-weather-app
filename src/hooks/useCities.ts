@@ -1,7 +1,11 @@
 import useSWR from "swr";
 import get from "lodash/fp/get";
 import map from "lodash/fp/map";
+import toString from "lodash/fp/toString";
 import { getWeatherData } from "../api/OpenWeatherMap";
+import { CityResponseData } from "../types/CityWeatherResponseData";
+import { AppDependencies } from "../interfaces/AppDependencies";
+import CityWeather from "../types/CityWeather";
 
 const CITIES = [
   "2158177", // Melbourne
@@ -14,8 +18,8 @@ const CITIES = [
   "2163355", // Hobart
 ];
 
-export const dataToCity = (data) => ({
-  id: data.id,
+export const dataToCity = (data: CityResponseData): CityWeather => ({
+  id: toString(data.id),
   name: data.name,
   description: get(["weather", 0, "description"], data),
   temperature: {
@@ -32,12 +36,12 @@ export const dataToCity = (data) => ({
   },
 });
 
-const fetcher = (deps) => () =>
+const fetcher = (deps: AppDependencies) => () =>
   getWeatherData(deps)(CITIES.join(","))
     .then(get("list"))
     .then(map(dataToCity));
 
-const useCities = (deps) => {
+const useCities = (deps: AppDependencies) => {
   const { data, error } = useSWR("cities", fetcher(deps));
 
   return {

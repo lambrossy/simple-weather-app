@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import CityTile from "./CityTile";
 
 const props = {
-  id: 2163355,
+  id: "2163355",
   name: "Hobart",
   description: "few clouds",
   temperature: { current: 11.28, max: 12.37, min: 9.51 },

@@ -5,8 +5,9 @@ import reportWebVitals from "./reportWebVitals";
 
 import "modern-normalize/modern-normalize.css";
 import "./index.css";
+import { AppDependencies } from "./interfaces/AppDependencies";
 
-const dependencies = {
+const dependencies: AppDependencies = {
   fetch: window.fetch,
   env: process.env,
 };
